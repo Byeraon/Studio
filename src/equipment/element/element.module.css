@@ -1,0 +1,15 @@
+.element {
+    cursor: pointer;
+}
+
+.element:hover {
+    color: #CFC09F;
+}
+
+.gold {
+    color: #CFC09F;
+}
+
+.not_gold {
+    color: #FFFFFF;
+}

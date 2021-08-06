@@ -1,0 +1,43 @@
+.page {
+  border-top: 2px white solid;
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+  scroll-behavior: smooth;
+}
+
+.blocks {
+  display: flex;
+  flex-direction: row;
+}
+
+.for_phone {
+  width: 45%;
+  height: 80vh;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.text {
+  width: 39%;
+  height: 55vh;
+  padding-top: 5vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.first_text {
+  margin-left: auto;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 5vw;
+  margin: 0;
+  margin-right: 0.5vw;
+  margin-top: -2%;
+}
+
+.second_text {
+  margin: 0 20%;
+}

@@ -1,0 +1,507 @@
+.page {
+    border-top: 2px white solid;
+    padding-top: 10vh;
+    background-color: black;
+    width: 100vw;
+    height: 150vh;
+    scroll-behavior: smooth;
+}
+
+.second_text {
+    font-size: 1vw;
+    font-family: Gilroy;
+    height: auto;
+}
+
+.text_arrows {
+    margin: 0;
+    width: 27%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-radius: 20px;
+    font-size: 1vh;
+    border: 2px rgb(107, 98, 80) solid;
+    text-align: center;
+    overflow: hidden;
+}
+
+.video {
+    width: 80%;
+    height: 30vh;
+    border: 2px rgb(81,75,62) solid;
+    border-radius: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow:0 0 30px rgb(81,75,62);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    scroll-behavior: smooth;
+}
+
+.changer {
+    z-index: 4;
+    margin-left: 62.5%;
+    height: 15%;
+    width: 15%;
+    background-image: url(../../images/icons/waiter/sun.png);
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+.changeday {
+    z-index: 20;
+    position: relative;
+    width: 15vh;
+    padding-top: 8.2%;
+    height: 15vh;
+    margin-left: 67%;
+    margin-top: -18%;
+    background-image: url(../../images/icons/waiter/man.png);
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+        
+}
+
+.changer_pod {
+    font-family: Gilroy;
+    position: relative;
+    text-align: center;
+    font-size: 1.5vh;
+    margin-left: 53%;
+    margin-top: -4%;
+
+}
+
+.changered {
+    animation: changing 2s linear infinite;
+}
+
+@keyframes changing {
+    0% { 
+        transform: rotate(0deg);
+        opacity: 1;
+        background-image: url(../../images/icons/waiter/sun.png);
+    }
+
+    25% {
+        transform: rotate(350deg);
+        opacity: 0;
+        background-image: url(../../images/icons/waiter/sun.png);
+    }
+
+    26% {
+        transform: rotate(0deg);
+        opacity: 0;
+        background-image: url(../../images/icons/waiter/moon.png);
+    }
+
+    50% {
+        opacity: 1;
+        background-image: url(../../images/icons/waiter/moon.png);
+    }
+    
+    75% {
+        opacity: 0;
+        background-image: url(../../images/icons/waiter/moon.png);
+    }
+
+    76% {
+        transform: rotate(0deg);
+        opacity: 0;
+        background-image: url(../../images/icons/waiter/sun.png);
+    }
+
+    100% {
+        transform: rotate(360deg);
+        opacity: 1;
+        background-image: url(../../images/icons/waiter/sun.png);
+    }
+    
+}
+
+
+.arrows {
+    
+    margin-top: 5vh;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(../../images/arrows.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    width: 80vh;
+    height: 50vh;
+}
+
+
+.video:hover {
+    box-shadow:0 0 80px rgb(81,75,62);
+}
+
+
+
+.second_block {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+   
+}
+
+
+.playbutton {
+    height: 6vh;
+    width: 80%;
+    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='iso-8859-1'%3F%3E%3C!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3Csvg version='1.1' id='Capa_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 60 60' stroke='rgb(81,75,62)' fill='rgb(81,75,62)' xml:space='preserve'%3E%3Cg%3E%3Cpath d='M45.563,29.174l-22-15c-0.307-0.208-0.703-0.231-1.031-0.058C22.205,14.289,22,14.629,22,15v30 c0,0.371,0.205,0.711,0.533,0.884C22.679,45.962,22.84,46,23,46c0.197,0,0.394-0.059,0.563-0.174l22-15 C45.836,30.64,46,30.331,46,30S45.836,29.36,45.563,29.174z M24,43.107V16.893L43.225,30L24,43.107z'/%3E%3Cpath d='M30,0C13.458,0,0,13.458,0,30s13.458,30,30,30s30-13.458,30-30S46.542,0,30,0z M30,58C14.561,58,2,45.439,2,30 S14.561,2,30,2s28,12.561,28,28S45.439,58,30,58z'/%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.phone {
+    position: relative;
+    width: 6vh;
+    height: 6vh;
+    margin-left: 66%;
+    margin-top: -5%;
+    background-image: url(../../images/icons/phone.png);
+    background-position: center center;
+    background-size: cover;
+   background-repeat: no-repeat;
+        
+}
+
+.phone_pod {
+    font-family: Gilroy;
+    position: relative;
+    text-align: center;
+    font-size: 1.5vh;
+    margin-left: 39%;
+    margin-top: 2%;
+        
+}
+
+.clock {
+    position: relative;
+    width: 7.1vh;
+    height: 7.13vh;
+    margin-left: 33.5%;
+    margin-top: -5%;
+    background-image: url(../../images/icons/clock/mainframe.png);
+    background-position: center center;
+    background-size: cover;
+   background-repeat: no-repeat;
+        
+}
+
+.datetime {
+    position: relative;
+    width: 7.1vh;
+    height: 7.13vh;
+    margin-left: 11.5%;
+    margin-top: 8%;
+    background-image: url(../../images/icons/datetime/mainframe.png);
+    background-position: center center;
+    background-size: cover;
+   background-repeat: no-repeat;
+        
+}
+
+.dt_clocks {
+    position: absolute;
+    height: 4.5vh;
+    width: 4.5vh;
+    margin-top: -47%;
+    margin-left: 38%;
+    background-image: url(../../images/icons/datetime/clock-main-fill.png);
+    background-position: center center;
+    background-size: cover;
+   background-repeat: no-repeat;
+}
+
+.dt_clocks_anim {
+    animation: clocks linear infinite;
+}
+
+.ref {
+    margin-bottom: -10%;
+}
+
+.dt_clocks_hours {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(../../images/icons/datetime/hours.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation-duration: 7.2s;
+
+}
+
+.dt_clocks_min {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(../../images/icons/datetime/minutes.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation-duration: .6s;
+
+
+}
+
+
+
+.dt_blocks {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 35%;
+    padding-left: 8%;
+    height: 50%;
+    width: 50%;
+}
+
+.dt_block {
+    border: 0.2vh rgb(207,192,159) solid;
+    border-radius: 0.2vh;
+    height: 8%;
+    width: 15%;
+}
+
+.dt_block_anim {
+    animation: blocks_fire 2s linear infinite;
+}
+
+.dt_block:nth-child(1) { animation-delay: 0s;}
+.dt_block:nth-child(2) { animation-delay: 0.2s;}
+.dt_block:nth-child(3) { animation-delay: 0.4s;}
+.dt_block:nth-child(4) { animation-delay: 0.6s;}
+.dt_block:nth-child(5) { animation-delay: 0.8s;}
+.dt_block:nth-child(6) { animation-delay: 1.0s;}
+.dt_block:nth-child(7) { animation-delay: 1.2s;}
+.dt_block:nth-child(8) { animation-delay: 1.4s;}
+.dt_block:nth-child(9) { animation-delay: 1.6s;}
+
+@keyframes blocks_fire {
+    0%, 100% {
+        background-color: black;
+    }
+
+    50% {
+        background-color: rgb(207,192,159);
+    }
+}
+
+.datetime_pod {
+    width: 20vh;
+    font-family: Gilroy;
+    position: relative;
+    text-align: center;
+    font-size: 1.5vh;
+    margin-left: 3%;
+    margin-top: 2%;
+}
+
+
+
+.clock_anim {
+    animation: clocks linear infinite;
+}
+
+
+.clock_min {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(../../images/icons/clock/minutes.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation-duration: .6s;
+}
+
+.clock_hours {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(../../images/icons/clock/hours.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation-duration: 7.2s;
+}
+
+@keyframes clocks {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(90deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    75% {
+        transform: rotate(270deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+    
+}
+
+.clock_pod {
+    width: 20vh;
+    font-family: Gilroy;
+    position: relative;
+    text-align: center;
+    font-size: 1.5vh;
+    margin-left: 25.7%;
+    margin-top: 2%;
+        
+}
+
+.que {
+    width: 14vh;
+    display: flex;
+    flex-direction: row;
+    margin-left: 89%;
+    margin-top: 3%;
+    
+}
+
+.que1 {
+    overflow:auto;
+    margin-left: auto;
+    position: relative;
+    width: 7vh;
+    height: 8vh;
+    background-image: url(../../images/icons/que/1.png);
+    background-position: center center;
+    background-size: cover;
+   background-repeat: no-repeat;
+        
+}
+
+.que2 {
+    position: relative;
+    width: 6vh;
+    height: 6vh;
+    background-image: url(../../images/icons/que/2.png);
+    background-position: center center;
+    background-size: cover;
+   background-repeat: no-repeat;
+        
+}
+
+.que3 {
+    position: relative;
+    width: 7vh;
+    height: 8vh;
+    background-image: url(../../images/icons/que/3.png);
+    background-position: center center;
+    background-size: cover;
+   background-repeat: no-repeat;
+        
+}
+
+.que_anim {
+    animation: phone 1s linear infinite;
+}
+
+.que_anim:nth-child(2) { animation-delay: .4s;}
+.que_anim:nth-child(3) { animation-delay: .5s;}
+
+.que_pod {
+    width: 30%;
+    font-family: Gilroy;
+    position: relative;
+    text-align: center;
+    font-size: 1.5vh;
+    margin-left: 83%;
+    margin-top: 1%;
+        
+}
+
+.first_block {
+    align-items: center;
+}
+
+.text_left {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.block {
+    margin-left: 20%;
+    margin-right: 20%;
+    display: flex;
+    flex-direction: row;
+}
+
+.first_block {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    text-align: center;
+}
+
+.phone:hover {
+    animation: phone 1s linear infinite;
+}
+@keyframes phone {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    10% {
+        transform: rotateZ(-30deg);
+    }
+    20% {
+        transform: rotateZ(15deg);
+    }
+    30% {
+        transform: rotateZ(-10deg);
+    }
+    40% {
+        transform: rotateZ(7.5deg);
+    }
+    50% {
+        transform: rotateZ(-6deg);
+    }
+    60% {
+        transform: rotateZ(5deg);
+    }
+    70% {
+        transform: rotateZ(-4.28571deg);
+    }
+    80% {
+        transform: rotateZ(3.75deg);
+    }
+    90% {
+        transform: rotateZ(-3.33333deg);
+    }
+    100% {
+        transform: rotateZ(0deg);
+    }
+    }
+
+    .input {
+        outline: none;
+        background-color: black;
+        color: white;
+        border: 2px solid white;
+        border-radius: 10px;
+        font-size: 150%;
+        padding: 4%
+    }

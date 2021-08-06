@@ -1,0 +1,136 @@
+.question {
+  font-family: Montserrat;
+  font-size: 1vw;
+  height: min-content;
+  width: 80%;
+}
+
+.once_q {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 100%;
+  box-shadow: 0px 4px 20px -4px rgba(255, 255, 255, 0.5);
+  border-radius: 40px;
+  height: max-content;
+  margin-top: 1vh;
+  margin-bottom: 2vh;
+}
+
+.question_p {
+  margin: 0;
+  margin-left: 2%;
+  margin-bottom: 4%;
+  font-family: Montserrat;
+  font-size: 1vw;
+  opacity: 0;
+}
+
+.oneQuestion {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 93%;
+  height: 0;
+  padding: 5%;
+}
+
+.open_button {
+  cursor: pointer;
+  width: 4%;
+  padding-top: 4%;
+  background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='iso-8859-1'%3F%3E%3C!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3Csvg version='1.1' id='Capa_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' fill='white' viewBox='0 0 256 256' style='enable-background:new 0 0 256 256;' xml:space='preserve'%3E%3Cg%3E%3Cg%3E%3Cpolygon points='225.813,48.907 128,146.72 30.187,48.907 0,79.093 128,207.093 256,79.093 '/%3E%3C/g%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3C/svg%3E%0A");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-right: 2.5%;
+}
+
+.buttonTrue {
+  animation: btnTrue 250ms linear forwards;
+}
+
+@keyframes btnTrue {
+  from {
+    transform: scale(1, 1);
+  }
+
+  to {
+    transform: scale(-1, -1);
+  }
+}
+
+.buttonFalse {
+  animation: btnFalse 250ms linear forwards;
+}
+
+@keyframes btnFalse {
+  from {
+    transform: scale(-1, -1);
+  }
+
+  to {
+    transform: scale(1, 1);
+  }
+}
+
+.open_place {
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  height: min-content;
+  max-height: 0px;
+}
+
+.opaciter {
+  animation: vis 250ms linear 250ms forwards;
+}
+
+@keyframes vis {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.opaciter_out {
+  animation: vis_out 250ms linear forwards;
+}
+
+@keyframes vis_out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.heithter {
+  animation: heig 250ms linear forwards;
+}
+
+@keyframes heig {
+  from {
+    max-height: 0px;
+  }
+  to {
+    max-height: 800px;
+  }
+}
+
+.heithter_out {
+  animation: heig_out 250ms linear 250ms forwards;
+}
+
+@keyframes heig_out {
+  from {
+    max-height: 800px;
+  }
+  to {
+    max-height: 0px;
+  }
+}

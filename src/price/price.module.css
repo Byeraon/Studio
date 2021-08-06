@@ -1,0 +1,28 @@
+.page {
+    border-top: 2px white solid;
+    background-color: black;
+    width: 100vw;
+    height: 150vh;
+    scroll-behavior: smooth;
+   
+}
+
+.first_text {
+    width: max-content;
+    margin-left: auto;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 5vw;
+    margin: 0;
+    margin-left: 10.4vw;
+}
+
+.block_packets {
+    margin: 1vh 10vw 0 10vw;
+    width: 80%;
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-right: 10vw;
+}

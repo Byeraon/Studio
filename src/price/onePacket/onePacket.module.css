@@ -1,0 +1,108 @@
+.block {
+  width: 32%;
+  height: max-content;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px transparent solid;
+  border-radius: 40px;
+  background: transparent;
+  box-shadow: inset -2px -2px 4px rgb(255 255 255 / 25%),
+    inset 4px 4px 4px rgb(39 34 34 / 50%);
+  z-index: 1;
+}
+
+.header_text {
+  font-family: Roboto;
+  font-size: 1.5vw;
+}
+
+.block_alltext {
+  text-align: left;
+}
+
+.el_text {
+  font-size: 1.1vw;
+  width: max-content;
+  font-family: Roboto;
+  padding: 0 0 0 20px;
+  height: 4vh;
+  vertical-align: middle;
+}
+
+.el_text::before {
+  content: " \25CE";
+  margin-right: 1vw;
+  height: 100%;
+  width: 40vw;
+  border-radius: 50%;
+}
+
+.btn_go {
+  width: 80%;
+  margin-top: auto;
+  justify-self: flex-end;
+  background-color: transparent;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  color: white;
+  cursor: pointer;
+  padding: 8% 10%;
+  border: 2px transparent solid;
+  border-radius: 40px;
+  box-shadow: inset -2px -2px 4px rgb(255 255 255 / 25%),
+    inset 4px 4px 4px rgb(39 34 34 / 50%);
+}
+
+.el_fill {
+  animation: filling 2s linear infinite;
+}
+
+@keyframes filling {
+  0% {
+    margin-top: 0vh;
+    box-shadow: 7px 6px 20px 10px rgba(207, 192, 159, 0.25);
+  }
+
+  25% {
+    margin-top: 1vh;
+    box-shadow: 7px 6px 20px 10px rgba(207, 192, 159, 0.25);
+  }
+
+  50% {
+    margin-top: 0vh;
+    box-shadow: 7px 6px 20px 10px rgba(207, 192, 159, 0.25);
+  }
+
+  75% {
+    margin-top: -1vh;
+    box-shadow: 7px 6px 20px 10px rgba(207, 192, 159, 0.25);
+  }
+
+  100% {
+    margin-top: 0vh;
+    box-shadow: 7px 6px 20px 10px rgba(207, 192, 159, 0.25);
+  }
+}
+
+.el_fill_out {
+  animation: filling_out 1s linear forwards;
+}
+
+@keyframes filling_out {
+  to {
+    margin: 0;
+    box-shadow: inset -2px -2px 4px rgb(255 255 255 / 25%),
+      inset 4px 4px 4px rgb(39 34 34 / 50%);
+  }
+}
+
+.btn_fill {
+  box-shadow: 0px 10px 67px 2px #ffffff69;
+}
+
+.btn_fill_o {
+  box-shadow: inset -2px -2px 4px rgb(255 255 255 / 25%),
+    inset 4px 4px 4px rgb(39 34 34 / 50%);
+}

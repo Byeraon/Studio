@@ -1,0 +1,48 @@
+.first_page {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+h1 {
+  bottom: 10%;
+  font-size: 6vw;
+  margin: 0;
+  font-family: Eurostile Extd Black;
+}
+
+@font-face {
+  font-family: "Eurostile Extd Black";
+  src: url("../fonts/Eurostile\ Extended-Black.otf") format("truetype");
+}
+
+.first_button {
+  font-family: Gilroy;
+  font-size: 1vw;
+  background-color: black;
+  color: white;
+  border: 2px solid;
+  padding: 3vh 7vh 3vh 7vh;
+
+  border-image: linear-gradient(
+    to bottom,
+    #cfc09f 22%,
+    #634f2c 24%,
+    #cfc09f 26%,
+    #cfc09f 27%,
+    #ffecb3 40%,
+    #3a2c0f 78%
+  );
+  border-image-slice: 1;
+  border-radius: 2vh;
+  outline: none;
+}
+
+.pages {
+  display: flex;
+  flex-direction: column;
+}

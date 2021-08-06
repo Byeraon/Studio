@@ -1,0 +1,28 @@
+.top_line {
+    z-index: 4;
+    margin-top: 0.1%;
+    position: absolute;
+    height: 7px;
+    background-color: #191919;
+    border-radius: 200px;
+    box-shadow: -1px -1px 4px rgba(255, 255, 255, 0.05), 3px 3px 4px rgba(0, 0, 0, 0.25), inset -0.5px -0.5px 3px rgba(255, 255, 255, 0.5), inset 0px 4px 4px #000000;
+}
+
+.back_line {
+    margin-top: .9%;
+    position: absolute;
+    height: 5px;
+    width: 100%;
+    border-radius: 200px;
+    background: linear-gradient(90deg, #FF0F00 -40.65%, #FCF204 150.81%);;
+    z-index: 4;
+}
+
+.all_lines {
+    display: flex;
+    position: absolute;
+    height: 5px;
+    width: 51%;
+    justify-content: flex-end;
+    z-index: 4;
+}

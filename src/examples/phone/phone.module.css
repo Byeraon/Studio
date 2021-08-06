@@ -1,0 +1,459 @@
+.phone {
+  height: 60vh;
+  margin-top: 4vh;
+  margin-right: 10vw;
+  width: 27.6vh;
+  z-index: 2;
+}
+
+.logos_place {
+  padding-top: 1vh;
+  height: 30vh;
+  width: 89%;
+  margin-left: 1.2%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.scaling {
+  transform: scale(0.9);
+}
+
+.next_logo {
+  animation: next_sizing 250ms linear forwards;
+}
+
+@keyframes next_sizing {
+  to {
+    margin-left: 160%;
+    transform: scale(1);
+  }
+}
+
+.prev_logo {
+  animation: prev_sizing 250ms linear forwards;
+}
+
+@keyframes prev_sizing {
+  to {
+    margin-right: 160%;
+    transform: scale(1);
+  }
+}
+
+.phone_logo {
+  box-shadow: 20px 20px 36px rgba(28, 31, 36, 0.4),
+    -20px -20px 30px rgba(255, 255, 255, 0.05);
+  border: 7px transparent solid;
+  background-clip: padding-box;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-left: 75%;
+  height: 88%;
+  background-color: gray;
+  border-radius: 50%;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+}
+
+.phone_logo::before {
+  margin-top: -62%;
+  margin-left: -2%;
+  position: absolute;
+  content: "";
+  z-index: -1;
+  border-radius: inherit;
+  margin: -border;
+  width: calc(60% + 16px);
+  padding-top: calc(60% + 16px);
+  background: linear-gradient(
+    to right bottom,
+    rgba(28, 31, 36, 0.4),
+    rgba(255, 255, 255, 0.05)
+  );
+}
+
+.second_logo {
+  padding-left: 50%;
+  height: 50%;
+}
+
+.author_track {
+  margin: 0;
+  padding-top: 20%;
+  font-family: Gilroy;
+  color: #bfc3c9;
+  font-size: 1.4em;
+}
+
+.name_track {
+  font-family: Gilroy;
+  font-size: 0.7em;
+  color: #787b80;
+}
+
+.phone_in {
+  margin-left: 30%;
+  position: relative;
+  height: 99%;
+  width: 105%;
+  background-image: url(../../images/phone.png);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 4vh;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
+}
+
+.back:active {
+  transform: scale(0.9);
+}
+
+.playlis_btn:active {
+  transform: scale(0.9);
+}
+
+.player {
+  width: 100%;
+  height: 99%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.track_list {
+  width: 80%;
+  height: 50%;
+}
+
+.playlist {
+  width: 100%;
+  height: 99%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.marginerPlaylist {
+  animation: marginPlyl 100ms linear forwards;
+}
+
+.marginerPlayer {
+  animation: marginPlr 100ms linear forwards;
+}
+
+@keyframes marginPlyl {
+  from {
+    margin-right: 0;
+  }
+  to {
+    margin-right: -100%;
+  }
+}
+
+@keyframes marginPlr {
+  from {
+    margin-left: 0%;
+  }
+  to {
+    margin-left: -100%;
+  }
+}
+
+.phone_shadow {
+  position: absolute;
+  background: linear-gradient(180deg, #353a40 0%, #272a2f 48.96%, #191a1e 100%);
+  margin-left: 9vh;
+  height: 59vh;
+  width: 28vh;
+
+  border-radius: 5vh;
+}
+
+.block_buttons {
+  margin-top: 5vh;
+  height: 5vh;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.text_playing {
+  height: 100%;
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text_playing h3 {
+  font-size: 60%;
+  margin: 0;
+}
+
+.logoM {
+  margin-top: -14%;
+  justify-content: space-evenly;
+}
+
+.playlis_btn {
+  width: 15%;
+  height: 89%;
+  padding: 0;
+  background: linear-gradient(132.18deg, #42474d 15.12%, #272b30 86.22%);
+  background-image: url("data:image/svg+xml,%3Csvg fill='%23BFC3C9' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30' width='60px' height='60px'%3E%3Cpath d='M 3 7 A 1.0001 1.0001 0 1 0 3 9 L 27 9 A 1.0001 1.0001 0 1 0 27 7 L 3 7 z M 3 14 A 1.0001 1.0001 0 1 0 3 16 L 27 16 A 1.0001 1.0001 0 1 0 27 14 L 3 14 z M 3 21 A 1.0001 1.0001 0 1 0 3 23 L 27 23 A 1.0001 1.0001 0 1 0 27 21 L 3 21 z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: 49% 49%;
+  background-size: 40%;
+  border: 1px transparent solid;
+  border-radius: 50%;
+
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.25),
+    -5px -5px 20px rgba(255, 255, 255, 0.1),
+    inset -1px -1px 5px rgba(255, 255, 255, 0.1),
+    inset 1px 1px 5px rgba(25, 26, 30, 0.5);
+}
+
+.back {
+  width: 15%;
+  height: 89%;
+  padding: 0;
+  background: linear-gradient(132.18deg, #42474d 15.12%, #272b30 86.22%);
+  background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='iso-8859-1'%3F%3E%3C!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3Csvg version='1.1' id='Capa_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' fill='%23BFC3C9' viewBox='0 0 386.242 386.242' style='enable-background:new 0 0 386.242 386.242;' xml:space='preserve'%3E%3Cg%3E%3Cpath id='Arrow_Back' d='M374.212,182.3H39.432l100.152-99.767c4.704-4.704,4.704-12.319,0-17.011 c-4.704-4.704-12.319-4.704-17.011,0L3.474,184.61c-4.632,4.632-4.632,12.379,0,17.011l119.1,119.1 c4.704,4.704,12.319,4.704,17.011,0c4.704-4.704,4.704-12.319,0-17.011L39.432,206.36h334.779c6.641,0,12.03-5.39,12.03-12.03 S380.852,182.3,374.212,182.3z'/%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 40%;
+  border: 1px transparent solid;
+  border-radius: 50%;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.25),
+    -5px -5px 20px rgba(255, 255, 255, 0.1),
+    inset -1px -1px 5px rgba(255, 255, 255, 0.1),
+    inset 1px 1px 5px rgba(25, 26, 30, 0.5);
+}
+
+.play {
+  background: linear-gradient(
+    133.89deg,
+    #e61717 -6.21%,
+    #e68b38 120.39%,
+    #f7ed00 165.85%
+  );
+  background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='iso-8859-1'%3F%3E%3C!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3Csvg version='1.1' id='Capa_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' fill='%23BFC3C9' viewBox='0 0 320.001 320.001' style='enable-background:new 0 0 320.001 320.001;' xml:space='preserve'%3E%3Cpath d='M295.84,146.049l-256-144c-4.96-2.784-11.008-2.72-15.904,0.128C19.008,5.057,16,10.305,16,16.001v288 c0,5.696,3.008,10.944,7.936,13.824c2.496,1.44,5.28,2.176,8.064,2.176c2.688,0,5.408-0.672,7.84-2.048l256-144 c5.024-2.848,8.16-8.16,8.16-13.952S300.864,148.897,295.84,146.049z'/%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3C/svg%3E%0A");
+  background-position: 53% 52%;
+}
+
+.play::before {
+  background: linear-gradient(
+    133.89deg,
+    #e61717 -6.21%,
+    #e68b38 120.39%,
+    #f7ed00 165.85%
+  );
+}
+
+.pause {
+  background: linear-gradient(
+    133.89deg,
+    #e61717 -6.21%,
+    #e68b38 120.39%,
+    #f7ed00 165.85%
+  );
+  background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='iso-8859-1'%3F%3E%3C!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Capa_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' fill='%23BFC3C9' width='45.975px' height='45.975px' viewBox='0 0 45.975 45.975' style='enable-background:new 0 0 45.975 45.975;' xml:space='preserve'%3E%3Cg%3E%3Cg%3E%3Cpath d='M13.987,0c-2.762,0-5,2.239-5,5v35.975c0,2.763,2.238,5,5,5s5-2.238,5-5V5C18.987,2.238,16.75,0,13.987,0z'/%3E%3Cpath d='M31.987,0c-2.762,0-5,2.239-5,5v35.975c0,2.762,2.238,5,5,5s5-2.238,5-5V5C36.987,2.239,34.749,0,31.987,0z'/%3E%3C/g%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3C/svg%3E%0A");
+  background-position: 50% 52%;
+}
+
+.pause::before {
+  background: linear-gradient(
+    133.89deg,
+    #e61717 -6.21%,
+    #e68b38 120.39%,
+    #f7ed00 165.85%
+  );
+}
+
+.next {
+  background: linear-gradient(132.18deg, #3e3f45 15.12%, #0f0f12 86.22%);
+  background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='iso-8859-1'%3F%3E%3C!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3Csvg version='1.1' id='Capa_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 18.909 18.909' style='enable-background:new 0 0 18.909 18.909;' xml:space='preserve'%3E%3Cg%3E%3Cpath style='fill:%23BFC3C9;' d='M10.193,8.311L1.887,1.714C1.484,1.511,1.003,1.533,0.619,1.766C0.233,1.998,0,2.412,0,2.856v13.198 c0,0.443,0.233,0.856,0.619,1.089c0.208,0.126,0.444,0.19,0.683,0.19c0.201,0,0.401-0.046,0.586-0.138l8.306-6.599 c0.4-0.376,0.716-0.658,0.716-1.143S10.641,8.707,10.193,8.311z'/%3E%3Cpath style='fill:%23BFC3C9;' d='M18.193,8.311L9.887,1.714C9.484,1.511,9.002,1.533,8.618,1.766 c-0.386,0.232-0.619,0.646-0.619,1.09v13.198c0,0.443,0.233,0.856,0.619,1.089c0.208,0.126,0.444,0.19,0.683,0.19 c0.201,0,0.401-0.046,0.586-0.138l8.306-6.599c0.4-0.376,0.716-0.658,0.716-1.143S18.641,8.707,18.193,8.311z'/%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3C/svg%3E%0A");
+  background-position: 52% 50%;
+}
+
+.next::before {
+  background: linear-gradient(132.18deg, #3e3f45 15.12%, #0f0f12 86.22%);
+}
+
+.prev {
+  background: linear-gradient(132.18deg, #3e3f45 15.12%, #0f0f12 86.22%);
+  background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='iso-8859-1'%3F%3E%3C!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3Csvg version='1.1' id='Capa_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' transform='rotate(180)' viewBox='0 0 18.909 18.909' style='enable-background:new 0 0 18.909 18.909;' xml:space='preserve'%3E%3Cg%3E%3Cpath style='fill:%23BFC3C9;' d='M10.193,8.311L1.887,1.714C1.484,1.511,1.003,1.533,0.619,1.766C0.233,1.998,0,2.412,0,2.856v13.198 c0,0.443,0.233,0.856,0.619,1.089c0.208,0.126,0.444,0.19,0.683,0.19c0.201,0,0.401-0.046,0.586-0.138l8.306-6.599 c0.4-0.376,0.716-0.658,0.716-1.143S10.641,8.707,10.193,8.311z'/%3E%3Cpath style='fill:%23BFC3C9;' d='M18.193,8.311L9.887,1.714C9.484,1.511,9.002,1.533,8.618,1.766 c-0.386,0.232-0.619,0.646-0.619,1.09v13.198c0,0.443,0.233,0.856,0.619,1.089c0.208,0.126,0.444,0.19,0.683,0.19 c0.201,0,0.401-0.046,0.586-0.138l8.306-6.599c0.4-0.376,0.716-0.658,0.716-1.143S18.641,8.707,18.193,8.311z'/%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3C/svg%3E%0A");
+  background-position: 50% 50%;
+}
+
+.prev::before {
+  background: linear-gradient(132.18deg, #3e3f45 15.12%, #0f0f12 86.22%);
+  margin-left: 100%;
+}
+
+.button_click {
+  outline: none;
+  height: 95%;
+  width: 30%;
+  cursor: pointer;
+  border-radius: 50%;
+  margin: 0 5%;
+  background-repeat: no-repeat;
+  background-size: 30%;
+  border: 2px transparent solid;
+  border-color: transparent;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.35),
+    -10px -10px 30px rgba(255, 255, 255, 0.1);
+}
+
+.button_click:active {
+  margin-top: 0.5vh;
+}
+
+.button_click::before {
+  position: absolute;
+  margin: -9.5% -9.9%;
+  content: "";
+  z-index: -1;
+  border-radius: inherit;
+  width: 20%;
+  padding-top: 19%;
+  transform: rotate(180deg);
+}
+
+.duration_l {
+  z-index: 20;
+}
+
+.moving {
+  animation: move 1.5s linear infinite;
+}
+
+@keyframes move {
+  0% {
+    margin-top: 0;
+  }
+  25% {
+    margin-top: 0.5vh;
+  }
+  50% {
+    margin-top: 0vh;
+  }
+  75% {
+    margin-top: -1vh;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+
+.inputer {
+  z-index: 20;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10%;
+}
+
+.duration_l[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 30px;
+  width: 30px;
+  margin-top: 0.2px;
+  background-color: transparent;
+  border: 5px #26292e solid;
+  border-radius: 50%;
+  cursor: pointer;
+
+  box-shadow: 0px 0px 5px 1px white; /* Add cool effects to your sliders! */
+}
+
+.slider {
+  width: 100%;
+}
+
+.button_place {
+  padding: 0 20%;
+  width: 80%;
+  height: 8vh;
+  margin-bottom: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.duration_l[type="range"] {
+  outline: none;
+  overflow: hidden;
+  width: 60%;
+  border-radius: 40%;
+  -webkit-appearance: none;
+  background-color: transparent;
+  overflow: visible;
+}
+
+.duration_l[type="range"]::-webkit-slider-runnable-track {
+  height: 10px;
+  -webkit-appearance: none;
+  background-color: transparent;
+  margin-top: -2.9px;
+}
+
+.duration_l[type="range"]::-webkit-slider-thumb {
+  width: 15px;
+  -webkit-appearance: none;
+  height: 15px;
+  cursor: pointer;
+  color: #434343;
+}
+
+.duration_l[type="range"]::-moz-range-progress {
+  background-color: transparent;
+}
+
+.text_block {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  height: 20vh;
+  width: 80%;
+}
+
+.times {
+  padding-bottom: 3%;
+  align-items: flex-end;
+  height: max-content;
+  height: 100%;
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.times h3 {
+  margin: 0;
+  font-family: Gilroy;
+  font-size: 0.7em;
+  color: #787b80;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../../fonts/Gilroy-Black.ttf") format("truetype");
+}

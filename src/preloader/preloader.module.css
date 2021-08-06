@@ -1,0 +1,74 @@
+.text {
+    color: #6f6f6f6b;
+    font-size: 8vw;
+    opacity: 0;
+    background: url(../images/wave.png);
+    background-repeat: repeat-x;
+    background-clip: text; 
+    background-size: 40% 0%;
+    background-position-y: 100%;
+    background-position-x: -100%;
+    user-select: none;
+}
+
+.loader {
+    z-index: 20;
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+}
+
+.faster_anim {
+    animation: water_nop 500ms linear forwards;
+}
+
+.filling_anim {
+    animation: water_fill 5s linear forwards;
+}
+
+.destroy_anim {
+    animation: water_op 250ms linear forwards;
+}
+
+@keyframes water_nop {
+    to {
+        font-size: 10vw;
+        opacity: 1;
+    }
+}
+
+
+@keyframes water_fill {
+    from {
+        font-size: 10vw;
+        opacity: 1;
+    }
+    to {
+        font-size: 10vw;
+        opacity: 1;
+        background-size: 40% 100%;
+        background-position-y: 50%;
+        background-position-x: 300%;
+    }
+}
+
+@keyframes water_op {
+    from {
+        font-size: 10vw;
+        opacity: 1;
+        background-size: 40% 100%;
+        background-position-y: 50%;
+        background-position-x: 300%;
+    }
+    to {
+        font-size: 8vw;
+        opacity: 0;
+        background-size: 40% 100%;
+        background-position-y: 50%;
+        background-position-x: 300%;
+    }
+}

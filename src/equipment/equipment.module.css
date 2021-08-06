@@ -1,0 +1,166 @@
+.page {
+  border-top: 2px white solid;
+  background-color: black;
+  width: 100vw;
+  height: 150vh;
+  scroll-behavior: smooth;
+  overflow: hidden;
+}
+
+.first_text {
+  width: max-content;
+  margin-left: auto;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 5vw;
+  height: 10%;
+  margin-left: 10.4vw;
+}
+
+.block_eq {
+  margin: 1vh 10vw 0 10vw;
+  width: 80%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-right: 10vw;
+}
+
+.text_block {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: max-content;
+  justify-content: space-around;
+}
+
+.text_block_second {
+  margin-left: calc(2vw);
+  margin-right: 2vw;
+  margin-top: 5vh;
+  font-family: Roboto;
+  width: 50%;
+}
+
+.text_block_second h5 {
+  margin: 0;
+  font-size: 24px;
+  text-align: center;
+  height: min-content;
+}
+
+.text_block_second h6 {
+  margin: 0;
+  margin-top: 5%;
+  font-size: 24px;
+  text-align: left;
+  height: min-content;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-Black.ttf") format("truetype");
+}
+
+.line {
+  width: 100%;
+  height: 5px;
+  border-radius: 3px;
+  background-color: white;
+  overflow: hidden;
+}
+
+.info {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  padding-top: 5%;
+}
+
+.photo {
+  margin-top: 5vh;
+  width: 50%;
+  height: 65%;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 40px;
+  box-shadow: 0px 13px 67px 13px #ffffff69;
+}
+
+.not_opacity {
+  animation: none_opacity 250ms linear forwards;
+}
+
+@keyframes none_opacity {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.opaciter {
+  animation: opacity_anim 250ms linear forwards;
+}
+
+@keyframes opacity_anim {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.moving_line {
+  width: 25%;
+  height: 100%;
+  background-color: #cfc09f;
+  border-radius: 3px;
+}
+
+.goTo0 {
+  animation: to0 250ms linear forwards;
+}
+
+@keyframes to0 {
+  to {
+    margin-left: 0;
+  }
+}
+
+.goTo1 {
+  animation: to1 250ms linear forwards;
+}
+
+@keyframes to1 {
+  to {
+    margin-left: 25%;
+  }
+}
+
+.goTo2 {
+  animation: to2 250ms linear forwards;
+}
+
+@keyframes to2 {
+  to {
+    margin-left: 50%;
+  }
+}
+
+.goTo3 {
+  animation: to3 250ms linear forwards;
+}
+
+@keyframes to3 {
+  to {
+    margin-left: 75%;
+  }
+}

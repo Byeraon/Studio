@@ -1,0 +1,52 @@
+.menu {
+    margin-left: calc(-1 * (100vw - 100%)); 
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    justify-content: center;
+    width: 100%;
+    margin-top: 5vh;
+    background-color: rgba(0, 0, 0, 0.664);
+    z-index: 100;
+}
+
+.menu_top {
+    animation: menu_top 250ms linear forwards;
+}
+
+.menu_bottom {
+    margin-top: 5vh;
+    animation: menu_bottom 250ms linear forwards;
+}
+
+h2 {
+    font-family: Gilroy;
+    margin: 2vw;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: "Gilroy"; 
+    src: url("../fonts/Gilroy-Black.ttf") format("truetype"); 
+    } 
+
+@keyframes menu_top {
+    to {
+        margin-top: 0;
+    }
+}
+
+@keyframes menu_bottom {
+    from {
+        margin-top: 0;
+    }
+    to {
+        margin-top: 5vh;
+    }
+}

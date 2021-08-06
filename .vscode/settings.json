@@ -1,0 +1,7 @@
+{
+    "files.eol": "\r\n",
+    "editor.tabSize": 2,
+    "eslint.autoFixOnSave": true,
+    "editor.formatOnSave": true,
+    "eslint.enable": false
+}
