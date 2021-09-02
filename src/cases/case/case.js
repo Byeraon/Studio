@@ -4,7 +4,6 @@ import style from './case.module.css';
 export let Case = (props) => {
     let Card = useRef();
     const [opaciter, setOpacity] = useState(style.none_opaciter);
-    const [opacityLay, setOpacitylay] = useState();
     const [layout, setLay] = useState();
 
     useEffect(() => {

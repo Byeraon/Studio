@@ -15,7 +15,9 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
+
+  overflow: visible;
+  overflow-x: hidden;
 }
 
 .scaling {
@@ -58,23 +60,6 @@
   border-radius: 50%;
   border-top: 2px solid white;
   border-bottom: 2px solid white;
-}
-
-.phone_logo::before {
-  margin-top: -62%;
-  margin-left: -2%;
-  position: absolute;
-  content: "";
-  z-index: -1;
-  border-radius: inherit;
-  margin: -border;
-  width: calc(60% + 16px);
-  padding-top: calc(60% + 16px);
-  background: linear-gradient(
-    to right bottom,
-    rgba(28, 31, 36, 0.4),
-    rgba(255, 255, 255, 0.05)
-  );
 }
 
 .second_logo {

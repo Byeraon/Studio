@@ -1,5 +1,5 @@
 import style from "./cases.module.css";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Case } from "./case/case";
 import p1 from "../images/cases/1.png";
 import p2 from "../images/cases/2.png";
@@ -10,7 +10,7 @@ export let Cases = () => {
     {
       name: "Как5ой-то чел",
       info: "Какая-то инфа про че5ла",
-      photo: p3,
+      photo: p3, 
     },
     {
       name: "Какой-то чел1",
