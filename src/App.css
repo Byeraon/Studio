@@ -29,7 +29,8 @@ body {
 }
 
 .go_toR {
-  font-size: 12vw;
+  font-size: 200px;
+  height: 180px;
 }
 
 .gold_text_scn {
@@ -128,4 +129,17 @@ body {
 @font-face {
   font-family: "Gilroy";
   src: url("./fonts/Gilroy-Black.ttf") format("truetype");
+}
+
+@media (max-width: 1200px) {
+  .go_toR {
+    font-size: 190px;
+    height: 180px;
+  }
+  .gold_text_scn {
+    font-size: 80px;
+  }
+  .thrid_text {
+    font-size: 20px;
+  }
 }
