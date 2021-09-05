@@ -15,9 +15,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-
-  overflow: visible;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .scaling {
@@ -441,4 +439,101 @@
 @font-face {
   font-family: "Gilroy";
   src: url("../../fonts/Gilroy-Black.ttf") format("truetype");
+}
+
+@media (max-width: 1200px) {
+  .phone_in {
+    background-image: none;
+    margin-left: 0;
+    height: 59vh;
+    width: 28vh;
+  }
+  .phone_shadow {
+    margin-left: 0;
+  }
+  .button_click::before {
+    position: absolute;
+    margin: -9.5% -9.9%;
+    content: "";
+    z-index: -1;
+    border-radius: inherit;
+    width: 20%;
+    padding-top: 19%;
+    transform: rotate(180deg);
+  }
+  .button_click {
+    height: 80%;
+  }
+  .back {
+    height: 60%;
+    transform: scale(1.2);
+  }
+  .playlis_btn {
+    height: 60%;
+    transform: scale(1.2);
+  }
+}
+
+@media (max-width: 1200px) {
+  .phone_logo {
+    height: 120px;
+    width: 120px;
+  }
+  .phone {
+    margin-top: 20vh;
+    transform: scale(1.2);
+    margin: 0;
+  }
+  .second_logo {
+    padding-left: 0px;
+    height: 100px;
+  }
+  .logoM {
+    overflow: visible;
+  }
+}
+
+@media (max-height: 820px) {
+  .text_playing {
+    font-size: 15px;
+  }
+  .author_track {
+    font-size: 15px;
+  }
+}
+
+@media (max-height: 695px) {
+  .text_playing {
+    font-size: 13px;
+  }
+  .author_track {
+    font-size: 15px;
+  }
+}
+
+@media (max-height: 600px) {
+  .text_playing {
+    font-size: 11px;
+  }
+  .author_track {
+    font-size: 13px;
+  }
+  .name_track {
+    font-size: 10px;
+  }
+}
+
+@media (max-height: 510px) {
+  .times h3 {
+    font-size: 10px;
+  }
+  .text_playing {
+    font-size: 9px;
+  }
+  .author_track {
+    font-size: 11px;
+  }
+  .name_track {
+    font-size: 9px;
+  }
 }

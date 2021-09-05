@@ -41,3 +41,13 @@
 .second_text {
   margin: 0 20%;
 }
+
+@media (max-width: 1200px) {
+  .for_phone {
+    width: max-content;
+    height: max-content;
+  }
+  .blocks {
+    justify-content: center;
+  }
+}

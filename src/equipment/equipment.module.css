@@ -35,11 +35,16 @@
   justify-content: space-around;
 }
 
+h6 {
+  font-weight: 300;
+}
+
 .text_block_second {
-  margin-left: calc(2vw);
+  margin-left: calc(5vw);
   margin-right: 2vw;
   margin-top: 5vh;
-  font-family: Roboto;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500 !important;
   width: 50%;
 }
 
