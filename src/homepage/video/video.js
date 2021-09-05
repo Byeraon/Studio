@@ -11,41 +11,41 @@ export let Video = () => {
   return (
     <div className={style.page}>
       <div className={style.block}>
-        {window.innerWidth > 1200 && (
-          <div className={style.block_for_firstText}>
-            <h1 style={{ fontSize: "2vw" }} className={style.second_text}>
-              Посмотрите короткое видео о «‎Cavi music»
+        (
+        <div className={style.block_for_firstText}>
+          <h1 style={{ fontSize: "2vw" }} className={style.second_text}>
+            Посмотрите короткое видео о «‎Cavi music»
+          </h1>
+          <h1
+            style={{ marginBottom: "3vh", marginTop: "3vh" }}
+            className={style.second_text}
+          >
+            за 2 минуты 46 секунд вы узнаете
+          </h1>
+          <div className={style.texted}>
+            <h1 className={style.second_text}>
+              Как гарантированно записать хорошую песню?
             </h1>
-            <h1
-              style={{ marginBottom: "3vh", marginTop: "3vh" }}
-              className={style.second_text}
-            >
-              за 2 минуты 46 секунд вы узнаете
+            <h1 className={style.second_text}>
+              Что делать, если не умеете петь?
             </h1>
-            <div className={style.texted}>
-              <h1 className={style.second_text}>
-                Как гарантированно записать хорошую песню?
-              </h1>
-              <h1 className={style.second_text}>
-                Что делать, если не умеете петь?
-              </h1>
-              <h1 className={style.second_text}>
-                Опыт работы нашей команды в музыкальной сфере
-              </h1>
-            </div>
-            <h1
-              style={{ marginBottom: "3vh", marginTop: "3vh" }}
-              className={style.second_text}
-            >
-              Заполните короткую форму
+            <h1 className={style.second_text}>
+              Опыт работы нашей команды в музыкальной сфере
             </h1>
-            <input
-              className={style.input}
-              type="tel"
-              placeholder="Введите номер телефона"
-            ></input>
           </div>
-        )}
+          <h1
+            style={{ marginBottom: "3vh", marginTop: "3vh" }}
+            className={style.second_text}
+          >
+            Заполните короткую форму
+          </h1>
+          <input
+            className={style.input}
+            type="tel"
+            placeholder="Введите номер телефона"
+          ></input>
+        </div>
+        )
         <div className={style.second_block_text}>
           <div className={style.videoWindow}>
             <iframe
