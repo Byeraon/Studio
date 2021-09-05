@@ -11,7 +11,6 @@ export let Video = () => {
   return (
     <div className={style.page}>
       <div className={style.block}>
-        (
         <div className={style.block_for_firstText}>
           <h1 style={{ fontSize: "2vw" }} className={style.second_text}>
             Посмотрите короткое видео о «‎Cavi music»
@@ -45,7 +44,7 @@ export let Video = () => {
             placeholder="Введите номер телефона"
           ></input>
         </div>
-        )
+
         <div className={style.second_block_text}>
           <div className={style.videoWindow}>
             <iframe

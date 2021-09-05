@@ -221,16 +221,7 @@ export let Phone = () => {
               className={style.playlis_btn}
             ></button>
           </div>
-          <div
-            style={
-              window.innerWidth > 1200
-                ? {}
-                : marginerPlaylist
-                ? { overflow: "visible" }
-                : {}
-            }
-            className={style.logos_place}
-          >
+          <div className={style.logos_place}>
             <div
               style={{
                 backgroundImage: "url(" + musicList[checkPrevSong()].img + ")",

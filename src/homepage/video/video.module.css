@@ -498,6 +498,13 @@
 }
 
 @media (max-width: 1200px) {
+  .second_block_text {
+    width: 100%;
+    margin: 30vh 0;
+  }
+  .block_for_firstText {
+    display: none;
+  }
   .videoWindow {
     width: 100%;
     height: 50vh;
@@ -506,10 +513,7 @@
     padding-top: 0;
     height: max-content;
   }
-  .second_block {
-    width: 100%;
-    margin: 30vh 0;
-  }
+
   .block {
     margin-left: 20%;
     margin-right: 20%;
@@ -542,7 +546,7 @@
 }
 
 @media (max-width: 400px) {
-  .second_block {
+  .second_block_text {
     height: 80%;
   }
   .block {

@@ -1,16 +1,31 @@
+import React, { useEffect, useState } from "react";
+
 import style from "./equipment.module.css";
 import { Element } from "./element/element";
 import p1 from "../images/equp/micro.jpg";
 import p2 from "../images/equp/zvk.jpg";
 import p3 from "../images/equp/monik.jpg";
 import p4 from "../images/equp/headphones.jpg";
-import { useEffect, useState } from "react";
 
 export let Equipment = () => {
   const [currentIndex, setIndex] = useState(0);
   const [currentLine, setLine] = useState(0);
   const [animFiller, setAnim] = useState();
   const [fillerLine, setLineAnim] = useState(style.goTo0);
+  const isMob = isMobile();
+
+  function isMobile() {
+    if (
+      /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+        navigator.userAgent
+      )
+    ) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
   const dataMas = [
     {
       photo: p1,
@@ -85,22 +100,47 @@ export let Equipment = () => {
         ОБОРУДОВАНИЕ
       </h5>
       <div className={style.block_eq}>
-        <div className={style.text_block}>{mas}</div>
-        <div className={style.line}>
-          <div
-            style={{ marginLeft: currentLine + "%" }}
-            className={style.moving_line + " " + fillerLine}
-          ></div>
+        <div className={style.text_block}>
+          {isMob ? mas[currentIndex] : mas}
         </div>
-        <div className={style.info + " " + animFiller}>
+        {!isMob && (
+          <div className={style.line}>
+            <div
+              style={{ marginLeft: currentLine + "%" }}
+              className={style.moving_line + " " + fillerLine}
+            ></div>
+          </div>
+        )}
+
+        <div
+          style={isMob ? { flexDirection: "column" } : {}}
+          className={style.info + " " + animFiller}
+        >
           <div
-            style={{
-              backgroundImage: "url(" + dataMas[currentIndex].photo + ")",
-            }}
+            style={Object.assign(
+              {
+                backgroundImage: "url(" + dataMas[currentIndex].photo + ")",
+              },
+              isMob
+                ? {
+                    width: "100%",
+
+                    backgroundSize: "cover",
+                    height: "400px",
+                    minHeight: "400px",
+                  }
+                : {}
+            )}
             className={style.photo}
           ></div>
-          <div className={style.text_block_second}>
-            <h5>{dataMas[currentIndex].name}</h5>
+          <div
+            style={isMob ? { width: "100%", margin: 0, marginTop: "5vh" } : {}}
+            className={style.text_block_second}
+          >
+            <h5 style={isMob ? { textAlign: "center" } : {}}>
+              {dataMas[currentIndex].name}
+            </h5>
+
             <h6>{dataMas[currentIndex].info}</h6>
           </div>
         </div>
