@@ -22,7 +22,7 @@ export let Video = () => {
             >
               за 2 минуты 46 секунд вы узнаете
             </h1>
-            <div className={style.text_left}>
+            <div className={style.texted}>
               <h1 className={style.second_text}>
                 Как гарантированно записать хорошую песню?
               </h1>
@@ -47,7 +47,7 @@ export let Video = () => {
           </div>
         )}
         <div className={style.second_block}>
-          <div className={style.video}>
+          <div className={style.videoWindow}>
             <iframe
               title="Cavi Music"
               src="https://vk.com/video_ext.php?oid=-201187528&id=456239017&hash=10da8629795cfbc9&hd=2"
