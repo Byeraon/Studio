@@ -137,14 +137,6 @@
   box-shadow: 0 0 80px rgb(81, 75, 62);
 }
 
-.second_block {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100%;
-}
-
 .playbutton {
   height: 6vh;
   width: 80%;
@@ -427,10 +419,6 @@
   margin-top: 1%;
 }
 
-.first_block {
-  align-items: center;
-}
-
 .block {
   margin-left: 20%;
   margin-right: 20%;
@@ -444,11 +432,20 @@
   text-align: left;
 }
 
-.first_block {
+.block_for_firstText {
   display: flex;
   flex-direction: column;
   width: 50%;
   text-align: center;
+  align-items: center;
+}
+
+.second_block_text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
 }
 
 .phone:hover {
