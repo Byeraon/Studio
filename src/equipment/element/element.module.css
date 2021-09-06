@@ -1,15 +1,28 @@
 .element {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .element:hover {
-    color: #CFC09F;
+  color: #cfc09f;
 }
 
 .gold {
-    color: #CFC09F;
+  color: #cfc09f;
 }
 
 .not_gold {
-    color: #FFFFFF;
+  color: #ffffff;
+}
+
+@media (max-width: 1200px) {
+  .element {
+    margin: 0;
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 780px) {
+  .element {
+    font-size: 20px;
+  }
 }

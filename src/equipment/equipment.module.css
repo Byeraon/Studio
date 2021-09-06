@@ -171,3 +171,42 @@ h6 {
     margin-left: 75%;
   }
 }
+
+@media (max-width: 660px) {
+  .photo {
+    min-height: 300px !important;
+    height: 300px !important;
+    max-height: 300px;
+  }
+  .text_block_second h5 {
+    font-size: 15px;
+  }
+  .text_block_second h6 {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 620px) {
+  .photo {
+    min-height: 250px !important;
+    height: 250px !important;
+    max-height: 250px;
+  }
+}
+
+@media (max-width: 510px) {
+  .photo {
+    border-radius: 20px;
+    min-height: 200px !important;
+    height: 200px !important;
+    max-height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .photo {
+    min-height: 150px !important;
+    height: 150px !important;
+    max-height: 150px;
+  }
+}

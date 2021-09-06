@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import style from "./equipment.module.css";
 import { Element } from "./element/element";
 import p1 from "../images/equp/micro.jpg";
+import { useSwipeable } from "react-swipeable";
 import p2 from "../images/equp/zvk.jpg";
 import p3 from "../images/equp/monik.jpg";
 import p4 from "../images/equp/headphones.jpg";
@@ -12,6 +13,78 @@ export let Equipment = () => {
   const [currentLine, setLine] = useState(0);
   const [animFiller, setAnim] = useState();
   const [fillerLine, setLineAnim] = useState(style.goTo0);
+
+  const handlers = useSwipeable({
+    onSwiping: () => {
+      document.body.style.overflow = "hidden";
+    },
+
+    onSwipedUp: () => {
+      if (currentIndex !== mas.length - 1) {
+        setAnim(style.not_opacity);
+        setTimeout(() => {
+          setIndex(currentIndex + 1);
+          setAnim(style.opaciter);
+        }, 250);
+      } else {
+        setAnim(style.not_opacity);
+        setTimeout(() => {
+          setIndex(0);
+          setAnim(style.opaciter);
+        }, 250);
+      }
+    },
+    onSwipedDown: () => {
+      if (currentIndex !== 0) {
+        setAnim(style.not_opacity);
+        setTimeout(() => {
+          setIndex(currentIndex - 1);
+          setAnim(style.opaciter);
+        }, 250);
+      } else {
+        setAnim(style.not_opacity);
+        setTimeout(() => {
+          setIndex(mas.length - 1);
+          setAnim(style.opaciter);
+        }, 250);
+      }
+    },
+
+    onSwipedLeft: () => {
+      if (currentIndex !== mas.length - 1) {
+        setAnim(style.not_opacity);
+        setTimeout(() => {
+          setIndex(currentIndex + 1);
+          setAnim(style.opaciter);
+        }, 250);
+      } else {
+        setAnim(style.not_opacity);
+        setTimeout(() => {
+          setIndex(0);
+          setAnim(style.opaciter);
+        }, 250);
+      }
+    },
+    onSwipedRight: () => {
+      if (currentIndex !== 0) {
+        setAnim(style.not_opacity);
+        setTimeout(() => {
+          setIndex(currentIndex - 1);
+          setAnim(style.opaciter);
+        }, 250);
+      } else {
+        setAnim(style.not_opacity);
+        setTimeout(() => {
+          setIndex(mas.length - 1);
+          setAnim(style.opaciter);
+        }, 250);
+      }
+    },
+    onSwiped: () => {
+      document.body.style.overflow = "visible";
+    },
+  });
+
   const isMob = isMobile();
 
   function isMobile() {
@@ -129,9 +202,10 @@ export let Equipment = () => {
                     height: "400px",
                     minHeight: "400px",
                   }
-                : {}
+                : { minHeight: "300px" }
             )}
             className={style.photo}
+            {...handlers}
           ></div>
           <div
             style={isMob ? { width: "100%", margin: 0, marginTop: "5vh" } : {}}

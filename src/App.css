@@ -23,7 +23,7 @@ body {
   font-size: 5vw;
   -webkit-text-fill-color: black;
   -webkit-text-stroke-color: transparent;
-  -webkit-text-stroke-width: 8px;
+  -webkit-text-stroke-width: 4px;
   color: #fff;
   height: max-content;
   margin: 0;
@@ -39,12 +39,12 @@ body {
 .gold_text_scn {
   background: linear-gradient(
     to bottom,
-    #cfc09f 22%,
-    #634f2c 24%,
-    #cfc09f 26%,
-    #cfc09f 27%,
-    #ffecb3 40%,
-    #3a2c0f 78%
+    #cfc09f 16.6%,
+    #634f2c 33.2%,
+    #cfc09f 49.8%,
+    #cfc09f 66.4%,
+    #ffecb3 83%,
+    #3a2c0f 100%
   );
   margin: 0;
   text-align: center;
@@ -52,7 +52,7 @@ body {
   font-size: 100px;
   -webkit-text-fill-color: black;
   -webkit-text-stroke-color: transparent;
-  -webkit-text-stroke-width: 8px;
+  -webkit-text-stroke-width: 4px;
   color: #fff;
   margin: 0;
 }

@@ -24,8 +24,23 @@
   margin-left: auto;
   margin-right: auto;
   width: 60%;
-  height: 60%;
+  height: max-content;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+}
+@media (max-width: 780px) {
+  .block_questions {
+    width: 70%;
+  }
+}
+@media (max-width: 700px) {
+  .block_questions {
+    width: 80%;
+  }
+}
+@media (max-width: 580px) {
+  .block_questions {
+    width: 90%;
+  }
 }

@@ -21,7 +21,7 @@
 
 .first_text_cont {
   font-family: Gilroy;
-  font-size: 1vw;
+  font-size: 40px;
   margin: 0;
   margin-top: -8%;
   margin-bottom: 1vh;
@@ -30,6 +30,7 @@
 .second_text_cont {
   font-family: Gilroy;
   margin: 0;
+  font-size: 20px;
 }
 
 .cases {
@@ -39,7 +40,7 @@
   align-items: flex-start;
   width: 100%;
   height: 100%;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .cases_and_arrows {
@@ -64,4 +65,67 @@
   background-repeat: no-repeat;
   width: 40%;
   padding-top: 40%;
+}
+
+@media (max-width: 1200px) {
+  .first_text_cont {
+    font-size: 20px;
+  }
+  .second_text_cont {
+    font-size: 15px;
+  }
+  .cases_and_arrows {
+    margin-left: -5%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .first_text_cont {
+    margin-top: -15%;
+  }
+}
+
+@media (max-width: 920px) {
+  .cases_and_arrows {
+    margin-left: -15%;
+  }
+}
+
+@media (max-width: 660px) {
+  .first_text_cont {
+    margin-top: -19%;
+  }
+}
+
+@media (max-width: 620px) {
+  .cases_and_arrows {
+    margin-left: -25%;
+  }
+  .first_text_cont {
+    margin-top: -35%;
+  }
+}
+
+@media (max-width: 550px) {
+  .first_text_cont {
+    margin-top: -40%;
+  }
+}
+
+@media (max-width: 370px) {
+  .first_text_cont {
+    margin-top: -50%;
+  }
+  .first_text_cont {
+    font-size: 17px;
+  }
+  .second_text_cont {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 300px) {
+  .first_text_cont {
+    margin-top: -60%;
+  }
 }

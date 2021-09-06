@@ -1,139 +1,152 @@
 .for_case {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    height: 70%;
-    flex-wrap: wrap;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 70%;
+  flex-wrap: wrap;
+  text-align: center;
 }
 
 .pdng_left {
-    animation: pdng_left 500ms linear forwards;
+  animation: pdng_left 500ms linear forwards;
 }
 
 @keyframes pdng_left {
-    from {
-        margin-right: 0;
-    }
-    to {
-        margin-right: -10%;
-    }
+  from {
+    margin-right: 0;
+  }
+  to {
+    margin-right: -10%;
+  }
 }
 
 .mrgn_left {
-    animation: mrg_lt 500ms linear forwards;
+  animation: mrg_lt 500ms linear forwards;
 }
 
 @keyframes mrg_lt {
-    from {
-        margin-right: 0;
-    }
-    to {
-        margin-right: 10%;
-    }
+  from {
+    margin-right: 0;
+  }
+  to {
+    margin-right: 10%;
+  }
 }
 
 .pdng_right {
-    animation: pdng_right 500ms linear forwards;
+  animation: pdng_right 500ms linear forwards;
 }
 
 @keyframes pdng_right {
-    from {
-        margin-left:  0;
-    }
-    to {
-        margin-left: 10%;
-    }
+  from {
+    margin-left: 0;
+  }
+  to {
+    margin-left: 10%;
+  }
 }
 
 .mrgn_right {
-    animation: mrg_rg 500ms linear forwards;
+  animation: mrg_rg 500ms linear forwards;
 }
 
 @keyframes mrg_rg {
-    from {
-        margin-right: 0;
-    }
-    to {
-        margin-right: -10%;
-    }
+  from {
+    margin-right: 0;
+  }
+  to {
+    margin-right: -10%;
+  }
 }
 
 .setOzero {
-    animation: setzero 500ms linear forwards;
+  animation: setzero 500ms linear forwards;
 }
 
 .opacitty {
-    filter: blur(5px);
-    opacity: 0;
+  filter: blur(5px);
+  opacity: 0;
 }
 
 .setOone {
-    animation: setone 500ms linear forwards;
+  animation: setone 500ms linear forwards;
 }
 
 @keyframes setzero {
-    from {
-        filter: blur(5px);
-        opacity: 1;
-    }
-    to {
-        filter: blur(5px);
-        opacity: 0;
-    }
+  from {
+    filter: blur(5px);
+    opacity: 1;
+  }
+  to {
+    filter: blur(5px);
+    opacity: 0;
+  }
 }
 
 @keyframes setone {
-    from {
-        filter: blur(5px);
-        opacity: 0;
-    }
-    to {
-        filter: blur(5px);
-        opacity: 1;
-    }
+  from {
+    filter: blur(5px);
+    opacity: 0;
+  }
+  to {
+    filter: blur(5px);
+    opacity: 1;
+  }
 }
-
 
 .case {
-    transform: scale(0.9);
-    width: 100%;
-    height: 100%;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 40px;
-    
+  transform: scale(0.9);
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 40px;
 }
 
-
 .opaciter {
-    animation: none_bluring 250ms linear forwards;
+  animation: none_bluring 250ms linear forwards;
 }
 
 .none_opaciter {
-    animation: bluring 250ms linear forwards;
+  animation: bluring 250ms linear forwards;
 }
-
 
 @keyframes none_bluring {
-    from {      
-        filter: blur(5px);
-    }
+  from {
+    filter: blur(5px);
+  }
 
-    to {
-        filter: blur(0);
-    }
+  to {
+    filter: blur(0);
+  }
 }
-
 
 @keyframes bluring {
-    from {
-        filter: blur(0);
-    }
-    
-    to {
-        filter: blur(5px);
-    }
+  from {
+    filter: blur(0);
+  }
+
+  to {
+    filter: blur(5px);
+  }
 }
 
+@media (max-width: 1200px) {
+  .case {
+    width: 170%;
+  }
+}
+
+@media (max-width: 920px) {
+  .case {
+    width: 318%;
+  }
+}
+
+@media (max-width: 620px) {
+  .case {
+    width: 447%;
+    height: 80%;
+  }
+}

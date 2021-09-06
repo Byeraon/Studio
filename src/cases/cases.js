@@ -1,16 +1,49 @@
 import style from "./cases.module.css";
 import React, { useState } from "react";
+import { useSwipeable } from "react-swipeable";
 import { Case } from "./case/case";
 import p1 from "../images/cases/1.png";
 import p2 from "../images/cases/2.png";
 import p3 from "../images/cases/3razm.jpg";
 
 export let Cases = () => {
+  const isMob = isMobile();
+
+  function isMobile() {
+    if (
+      /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+        navigator.userAgent
+      )
+    ) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+  const handlers = useSwipeable({
+    onSwiping: () => {
+      document.body.style.overflow = "hidden";
+    },
+    onSwipeStart: () => {
+      document.body.style.overflow = "hidden";
+    },
+
+    onSwipedLeft: () => {
+      nextCase();
+    },
+    onSwipedRight: () => {
+      prevCase();
+    },
+    onSwiped: () => {
+      document.body.style.overflow = "visible";
+    },
+  });
+
   let [mas, setMas] = useState([
     {
       name: "Как5ой-то чел",
       info: "Какая-то инфа про че5ла",
-      photo: p3, 
+      photo: p3,
     },
     {
       name: "Какой-то чел1",
@@ -82,19 +115,22 @@ export let Cases = () => {
         С НАМИ РАБОТАЮТ
       </h5>
       <div className={style.cases_and_arrows}>
-        <div className={style.arrow_block}>
-          <div
-            onClick={prevCase}
-            style={{
-              zIndex: "20",
-              marginRight: "-400%",
-              transform: "rotate(180deg)",
-              marginLeft: "50%",
-            }}
-            className={style.arrow}
-          ></div>
-        </div>
-        <div className={style.cases + " "}>
+        {!isMob && (
+          <div className={style.arrow_block}>
+            <div
+              onClick={prevCase}
+              style={{
+                zIndex: "20",
+                marginRight: "-400%",
+                transform: "rotate(180deg)",
+                marginLeft: "50%",
+              }}
+              className={style.arrow}
+            ></div>
+          </div>
+        )}
+
+        <div {...handlers} className={style.cases + " "}>
           {mas.map((el, i) => (
             <Case
               mooving={mooving}
@@ -107,13 +143,15 @@ export let Cases = () => {
             />
           ))}
         </div>
-        <div className={style.arrow_block}>
-          <div
-            onClick={nextCase}
-            className={style.arrow}
-            style={{ zIndex: "20", marginLeft: "-400%", marginRight: "50%" }}
-          ></div>
-        </div>
+        {!isMob && (
+          <div className={style.arrow_block}>
+            <div
+              onClick={nextCase}
+              className={style.arrow}
+              style={{ zIndex: "20", marginLeft: "-400%", marginRight: "50%" }}
+            ></div>
+          </div>
+        )}
       </div>
 
       <h4 className={style.first_text_cont}>{mas[indexCenter].name}</h4>
