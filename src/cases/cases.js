@@ -2,9 +2,9 @@ import style from "./cases.module.css";
 import React, { useState } from "react";
 import { useSwipeable } from "react-swipeable";
 import { Case } from "./case/case";
-import p1 from "../images/cases/1.png";
-import p2 from "../images/cases/2.png";
-import p3 from "../images/cases/3razm.jpg";
+import p1 from "../images/cases/1.webp";
+import p2 from "../images/cases/2.webp";
+import p3 from "../images/cases/3razm.webp";
 
 export let Cases = () => {
   const isMob = isMobile();

@@ -13,7 +13,6 @@ function App() {
   const handleScroll = () => {
     const position = window.pageYOffset;
     setSrollPosition(position);
-    //console.log(position)
   };
 
   useEffect(() => {
@@ -22,7 +21,6 @@ function App() {
     } else {
       setMenu(false);
     }
-    console.log((scrollPosition * 100) / window.screen.height);
   }, [scrollPosition]);
   useEffect(() => {
     window.addEventListener("scroll", handleScroll, { passive: true });
