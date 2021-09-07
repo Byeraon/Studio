@@ -3,7 +3,7 @@ import { Packet } from "./onePacket/onePacket";
 
 export let Price = () => {
   return (
-    <div className={style.page}>
+    <div id="services" className={style.page}>
       <h1
         style={{ margin: "10vh 0", textAlign: "center" }}
         className="gold_text"

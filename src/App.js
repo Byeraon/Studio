@@ -7,7 +7,25 @@ import { HomePage } from "./homepage/homepage";
 
 function App() {
   const [isLoader, setLoader] = useState(false);
+  const [isOpenMenu, setOpen] = useState(false);
   const [isMenuchange, setMenu] = useState(false);
+  const [isMob, setMob] = useState();
+
+  useEffect(() => {
+    setMob(isMobile());
+  }, []);
+
+  function isMobile() {
+    if (
+      /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+        navigator.userAgent
+      )
+    ) {
+      return true;
+    } else {
+      return false;
+    }
+  }
 
   const [scrollPosition, setSrollPosition] = useState(0); // SCROLL POS
   const handleScroll = () => {
@@ -33,7 +51,12 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        <Menu isMenu={isMenuchange}></Menu>
+        <Menu
+          setOpen={setOpen}
+          isOpenMenu={isOpenMenu}
+          isMob={isMob}
+          isMenu={isMenuchange}
+        ></Menu>
         {isLoader && (
           <Preloader
             setLoader={() => {

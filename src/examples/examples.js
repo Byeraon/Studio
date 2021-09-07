@@ -4,7 +4,7 @@ import { Phone } from "./phone/phone";
 
 export let Examples = () => {
   return (
-    <div className={style.page}>
+    <div id="examples" className={style.page}>
       <h1 style={{ margin: "10vh 0" }} className="gold_text">
         ПОРТФОЛИО
       </h1>

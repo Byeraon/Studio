@@ -54,10 +54,13 @@ export let OneQuestion = (props) => {
 
   return (
     <div className={style.once_q}>
-      <div onClick={isMob && handlechange} className={style.oneQuestion}>
+      <div
+        onClick={isMob ? handlechange : () => {}}
+        className={style.oneQuestion}
+      >
         <h6 className={style.question}>{props.question}</h6>
         <div
-          onClick={!isMob && handlechange}
+          onClick={!isMob ? handlechange : () => {}}
           className={style.open_button + " " + buttonStyle}
         ></div>
       </div>
