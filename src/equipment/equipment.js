@@ -85,7 +85,11 @@ export let Equipment = () => {
     },
   });
 
-  const isMob = isMobile();
+  const [isMob, setMob] = useState();
+
+  useEffect(() => {
+    setMob(isMobile());
+  }, []);
 
   function isMobile() {
     if (
