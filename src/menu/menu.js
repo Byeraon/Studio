@@ -33,7 +33,7 @@ export let Menu = (props) => {
                 }
               : {
                   margin: "0",
-                  height: "100%",
+                  height: "max-content",
                   overflow: "visible",
                   backgroundColor: "transparent",
                   flexDirection: "column",
@@ -48,6 +48,7 @@ export let Menu = (props) => {
           <div
             onClick={() => props.setOpen((prevstate) => !prevstate)}
             id={style.navIcon}
+            style={props.isOpenMenu ? { marginBottom: "10%" } : {}}
             className={props.isOpenMenu ? style.open : undefined}
           >
             <span></span>
